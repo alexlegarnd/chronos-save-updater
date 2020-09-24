@@ -1,0 +1,20 @@
+[package]
+name = "save-updater-src"
+version = "0.1.0"
+authors = ["Alexis Delhaie <alexis.delhaie@yahoo.com>"]
+edition = "2018"
+build = "build.rs"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+platform-dirs = "0.2.0"
+serde_json = "1.0"
+serde = { version = "1.0", features = ["derive"] }
+chrono = "0.4.15"
+
+[build-dependencies]
+winres = "0.1"
+
+[profile.release]
+opt-level = 3
