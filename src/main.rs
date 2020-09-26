@@ -25,7 +25,7 @@ fn main() {
                 if args.len() >= 3 {
                     let allow_downgrade = confirm(
                         "Do you really want to downgrade your save? \
-                        You may experience data lost",
+                        You may experience data loses",
                     )
                     .unwrap();
                     if allow_downgrade {
